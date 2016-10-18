@@ -1,22 +1,17 @@
 Package: VIMGUI
-Version: 0.9.0
-Date: 2013-10-09
-Title: Visualization and Imputation of Missing Values
+Version: 0.10.0
+Date: 2016-10-18
+Title: Visualization and Imputation of Missing Values - Graphical User
+        Interface
 Author: Daniel Schopfhauser, Matthias Templ, Andreas Alfons, Alexander Kowarik,
     Bernd Prantner
 Maintainer: Alexander Kowarik <alexander.kowarik@statistik.gv.at>
-Depends: R (>= 2.13), tcltk, tkrplot,VIM (>=
+Depends: R (>= 3.3.0), tcltk, tkrplot,VIM (>=
         4.0.0),survey,gWidgetsRGtk2
-Imports: foreign,RGtk2,Cairo, Hmisc
-Description: This package introduces new tools for the visualization of missing
-    and/or imputed values, which can be used for exploring the data and the
-    structure of the missing and/or imputed values. Depending on this structure
-    of the missing values, the corresponding methods may help to identify the
-    mechanism generating the missings and allows to explore the data including
-    missing values. In addition, the quality of imputation can be visually
-    explored using various univariate, bivariate, multiple and multivariate
-    plot methods. A graphical user interface allows an easy handling of the
-    implemented plot methods.
+Imports: foreign,RGtk2,Cairo,gWidgets,Hmisc
+Description: A graphical user interface for the methods implemented in the
+    package VIM. It allows an easy handling of the
+    implemented plot and imputation methods.
 LazyData: TRUE
 SystemRequirements: BWidget
 License: GPL (>= 2)
@@ -26,6 +21,7 @@ Collate: 'helperGUI.R' 'TKRaggr.R' 'TKRdevice.R' 'TKRmarginmatrix.R'
         'TKRmatrixplot.R' 'TKRparcoordMiss.R' 'TKRpbox.R'
         'TKRscattmatrixMiss.R' 'utils.R' 'VIMGUI.R' 'vmGUImenu.R'
         'zzz.R'
-Packaged: 2014-01-02 17:52:18 UTC; ripley
+RoxygenNote: 5.0.1
 NeedsCompilation: no
-Date/Publication: 2014-01-02 19:18:18
+Packaged: 2016-10-18 09:24:42 UTC; kowa$
+Date/Publication: 2016-10-18 23:31:31
